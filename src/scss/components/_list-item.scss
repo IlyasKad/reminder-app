@@ -1,0 +1,23 @@
+#list__item {
+  margin: 10px 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#list__item-text {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+  font-weight: normal;
+}
+
+#list__item-icons {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#list__item-icon {
+  cursor: pointer;
+}
