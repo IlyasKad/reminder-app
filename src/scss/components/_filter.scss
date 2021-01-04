@@ -1,3 +1,12 @@
 #filter__btn {
   margin-left: 5px;
+  &.active {
+    color: grey!important;
+    border: 2px solid grey;
+  }
+  &:hover {
+    color: blueviolet!important;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+  }
 }
