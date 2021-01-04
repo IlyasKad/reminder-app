@@ -1,15 +1,25 @@
 import React from "react";
 import {ListItem} from "../list-item";
 
-export default class List extends React.Component {
-	render() {
+const List = ({itemsData}) => {
+	const elements = itemsData.map((item) => {
+		const {id, ...restItemData} = item;
 		return (
-			<div className="list">
-				<ListItem/>
-				<ListItem/>
-				<ListItem/>
-				<ListItem/>
-			</div>
+			<ListItem
+				{...restItemData}
+				key={id}
+			/>
 		);
-	}
+	});
+
+	return (
+		<div className="list">
+			{elements}
+		</div>
+	);
 }
+
+export default List;
+
+
+
